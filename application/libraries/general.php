@@ -6,7 +6,7 @@
 class General {
 
 	private $obj = NULL;
-    function General(){
+    function __construct(){
 		
 		$this->obj= & get_instance();
 	}

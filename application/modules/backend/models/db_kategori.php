@@ -4,7 +4,7 @@ class Db_kategori extends CI_Model{
 
 	function tampil_data_kategori(){
 		$this->load->database(); 
-		$this->db->group_by('Jenis_Kategori');
+		$this->db->order_by('Jenis_Kategori');
 		return $this->db->get('kategori');
 	}
 	function view_kategori(){
@@ -16,7 +16,7 @@ class Db_kategori extends CI_Model{
                     INNER JOIN lokasi c
                     ON a.`id_lokasi`=c.`id_lokasi`
                     Where a.status = "Show"
-				    GROUP BY b.Jenis_Kategori;');
+				    ORDER BY b.Jenis_Kategori;');
 	}
 	function input_data_kategori($data,$table){  
 		$this->load->database();

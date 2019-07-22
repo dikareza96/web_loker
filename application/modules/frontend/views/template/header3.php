@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <?php ?>
+    
     <title><?php echo $title ?></title>
-     ?>  
+  
     <!-- Css Files -->
     
     <link href="<?php echo base_url(); ?>assets/education-html/css/bootstrap.css" rel="stylesheet">
@@ -64,7 +64,7 @@
             <div class="wm-main-header wm-bgcolor-three ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2"><a href="<?=site_url('lowongan-terbaru');?>" class="wm-logo"><img src="<?php echo base_url(); ?>assets/education-html/images/logo-8.png" alt=""></a></div>
+                        <div class="col-md-2"><a href="<?=site_url('lowongan-terbaru');?>" class="wm-logo"><img src="<?php echo base_url(); ?>assets/education-html/images/final.png" alt=""></a></div>
                         <div class="col-md-10">
                             <div class="wm-right-section">
                                 <!--// Navigation \\-->

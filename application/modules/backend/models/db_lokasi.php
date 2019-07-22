@@ -8,7 +8,7 @@ class db_lokasi extends CI_Model{
 	} 
 	function view_lokasi(){
 		$this->load->database();
-		$this->db->group_by('nama_lokasi');
+		$this->db->order_by('nama_lokasi');
 		return $this->db->get('lokasi');
 	}
 
@@ -36,28 +36,28 @@ class db_lokasi extends CI_Model{
 	function view_lokasi_limit_1(){
 		$this->load->database();
 		$this->db->select('*');
-		$this->db->group_by('nama_lokasi');
+		$this->db->order_by('nama_lokasi');
 		$this->db->limit('8','0');
 		return $this->db->get('lokasi');
 	}
 	function view_lokasi_limit_2(){
 		$this->load->database();
 		$this->db->select('*');
-		$this->db->group_by('nama_lokasi');
+		$this->db->order_by('nama_lokasi');
 		$this->db->limit('8','8');
 		return $this->db->get('lokasi');
 	}
 	function view_lokasi_limit_3(){
 		$this->load->database();
 		$this->db->select('*');
-		$this->db->group_by('nama_lokasi');
+		$this->db->order_by('nama_lokasi');
 		$this->db->limit('8','17');
 		return $this->db->get('lokasi');
 	}
 	function view_lokasi_limit_4(){
 		$this->load->database();
 		$this->db->select('*');
-		$this->db->group_by('nama_lokasi');
+		$this->db->order_by('nama_lokasi');
 		$this->db->limit('8','25');
 		return $this->db->get('lokasi');
 	}

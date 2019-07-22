@@ -39,7 +39,7 @@ class Db_perusahaan extends CI_Model{
 			return $this->db->query('SELECT a.nm_perusahaan,a.gambar,a.id_loker, a.slug, a.email, b.Jenis_Kategori, a.nm_lowongan, c.nama_lokasi, a.tgl_akhir, a.tgl, a.tlp, a.Deskripsi, a.total_view
 				FROM loker a, kategori b, lokasi c
 				WHERE (a.id_kategori=b.id_kategori AND a.id_lokasi=c.id_lokasi) 
-				GROUP BY total_view DESC
+				ORDER BY total_view DESC
 				;');
 		}
 		function likes($table,$data, $where){
