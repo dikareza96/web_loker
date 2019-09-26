@@ -13,7 +13,7 @@ Website penyedia lowongan pekerjaan bagi mahasiswa Politeknik Kediri.
 - [PHP](https://php.net)
 
 #### Demo
-[Job Placement Center](http://karir.poltek-kediri.ac.id)
+[Job Placement Center](https://karirpoltek.000webhostapp.com)
 
 #### Screenshot
 
